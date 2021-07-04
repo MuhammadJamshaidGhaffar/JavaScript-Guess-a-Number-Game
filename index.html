@@ -8,6 +8,7 @@
     <title>Guess a Number</title>
     <script src="https://kit.fontawesome.com/d8dd4cb323.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -22,8 +23,8 @@
         </div>
         <div class="input-output">
             <div class="input-div">
-                <input type="text" name="" id="input-text" maxlength="2">
-                <button type="button" class="btn">Check!</button>
+                <input type="number" name="" id="input-text" min="1" max="20" onkeydown="validInput(event)">
+                <button type="button" class="btn" id="check-btn" onclick="check()">Check!</button>
             </div>
             <div class="output-div">
                 <div class="item result">
@@ -43,6 +44,7 @@
             </div>
         </div>
     </div>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
