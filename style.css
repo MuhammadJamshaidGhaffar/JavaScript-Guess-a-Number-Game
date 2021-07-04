@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  --black:#1d1d1d;
+}
+
+.container {
+  background: var(--black); /* fallback for old browsers */
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.btn {
+  font-size: 1.9rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+.range-text {
+  float: right;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.number .line{
+    border : 3px  solid white;
+    display: inline-block;
+    border: 6px 0  solid white;
+    text-align: center;
+    flex-grow: 1;
+}
+.number .value{
+    background-color: white;
+    font-size: 4rem;
+    color: var(--black);
+    padding: 1rem 5rem;
+}
+.input-output{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.input-div {
+    text-align: center;
+}
+#input-text{
+    border: 3px solid white;
+    background-color: var(--black);
+    color: white;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    width: 12rem;
+    font-size: 3rem;
+    height: 4rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+.item i {
+    margin-right: 2rem;
+}
+
+.output-div .item .text ,.output-div .item .value {
+    font-size: 2rem;
+}
+
+
+
+

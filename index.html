@@ -7,34 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess a Number</title>
     <script src="https://kit.fontawesome.com/d8dd4cb323.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <button type="button" onclick=""></button>
-        <p class="range-text">Between 1 and 20</p>
+        <button type="button" onclick="" class="btn again">Again!</button>
+        <p class="range-text">&lt;Between 1 and 20&gt;</p>
         <h1>Guess My Number!</h1>
-        <p class="line"></p>
-        <p class="number">?</p>
-        <p class="line"></p>
-        <div class="input-div">
-            <input type="text" name="" id="input-text">
-            <button type="button"></button>
+        <div class="number">
+            <p class="line"></p>
+            <p class="value">?</p>
+            <p class="line"></p>
         </div>
-        <div class="output-div">
-            <div class="item result">
-                <i class="fas fa-arrow-alt-circle-down item-icon"></i>
-                <p class="text">Too Low</p>
+        <div class="input-output">
+            <div class="input-div">
+                <input type="text" name="" id="input-text" maxlength="2">
+                <button type="button" class="btn">Check!</button>
             </div>
-            <div class="item score">
-                <i class="fas fa-arrow-alt-circle-down item-icon"></i>
-                <p class="text">score</p>
-                <p class="value"></p>
-            </div>
-            <div class="item highScore">
-                <i class="fas fa-arrow-alt-circle-down item-icon"></i>
-                <p class="text">HighScore</p>
-                <p class="value"></p>
+            <div class="output-div">
+                <div class="item result">
+                    <i class="fas fa-arrow-alt-circle-down item-icon fa-4x"></i>
+                    <p class="text">Too Low</p>
+                </div>
+                <div class="item score">
+                    <i class="fas fa-arrow-alt-circle-down item-icon fa-4x"></i>
+                    <p class="text">score : </p>
+                    <p class="value"></p>
+                </div>
+                <div class="item highScore">
+                    <i class="fas fa-arrow-alt-circle-down item-icon fa-4x"></i>
+                    <p class="text">HighScore : </p>
+                    <p class="value"></p>
+                </div>
             </div>
         </div>
     </div>
