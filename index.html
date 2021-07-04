@@ -12,34 +12,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <button type="button" onclick="" class="btn again">Again!</button>
+    <div class="container" id="container">
+        <button type="button" onclick="again()" class="btn again">Again!</button>
         <p class="range-text">&lt;Between 1 and 20&gt;</p>
         <h1>Guess My Number!</h1>
         <div class="number">
             <p class="line"></p>
-            <p class="value">?</p>
+            <p class="value" id="hidden-number">?</p>
             <p class="line"></p>
         </div>
         <div class="input-output">
             <div class="input-div">
-                <input type="number" name="" id="input-text" min="1" max="20" onkeydown="validInput(event)">
+                <input type="text" name="" id="input-text" maxlength="2" oninput="validInput()">
                 <button type="button" class="btn" id="check-btn" onclick="check()">Check!</button>
             </div>
             <div class="output-div">
                 <div class="item result">
-                    <i class="fas fa-arrow-alt-circle-down item-icon fa-4x"></i>
-                    <p class="text">Too Low</p>
+                    <i class="fas fa-question-circle fa-4x" id="result-icon"></i>
+                    <p class="text" id="result-text">Start Guessing!</p>
                 </div>
                 <div class="item score">
-                    <i class="fas fa-arrow-alt-circle-down item-icon fa-4x"></i>
+                    <i class="fas fa-star-half-alt fa-4x"></i>
                     <p class="text">score : </p>
-                    <p class="value"></p>
+                    <p class="value" id="score-value"></p>
                 </div>
-                <div class="item highScore">
-                    <i class="fas fa-arrow-alt-circle-down item-icon fa-4x"></i>
+                <div class="item highestScore">
+                    <i class="fas fa-star fa-4x"></i>
                     <p class="text">HighScore : </p>
-                    <p class="value"></p>
+                    <p class="value" id="highestScore-value"></p>
                 </div>
             </div>
         </div>

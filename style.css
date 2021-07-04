@@ -68,6 +68,10 @@ h1 {
     text-align: center;
     margin-bottom: 2rem;
 }
+.check-btn , .check-btn:disabled{
+  background-color: rgb(230, 44, 44);
+  color: var(--black);
+}
 
 .item{
     display: flex;
@@ -80,6 +84,10 @@ h1 {
 
 .output-div .item .text ,.output-div .item .value {
     font-size: 2rem;
+}
+
+.score i , .highestScore i {
+  color: gold;
 }
 
 
